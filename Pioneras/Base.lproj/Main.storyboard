@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" backgroundImage="hopper"/>
                                 <connections>
-                                    <segue destination="Tbc-xE-woy" kind="presentation" id="QHP-mc-jpX"/>
+                                    <segue destination="Sqy-kH-Dlm" kind="presentation" identifier="hopper" id="TuJ-4i-Zmw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSY-BE-Yf8">
@@ -28,7 +28,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="liskov"/>
                                 <connections>
-                                    <segue destination="6VD-69-t3U" kind="presentation" id="xiK-i4-q5U"/>
+                                    <segue destination="Sqy-kH-Dlm" kind="presentation" identifier="liskov" id="CN4-X2-0ke"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rK4-oj-4z1">
@@ -36,7 +36,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <state key="normal" backgroundImage="lovelace"/>
                                 <connections>
-                                    <segue destination="Sqy-kH-Dlm" kind="presentation" id="kJr-64-zRg"/>
+                                    <segue destination="Sqy-kH-Dlm" kind="presentation" identifier="lovelace" id="kJr-64-zRg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -48,15 +48,15 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Secundario View Controller-->
         <scene sceneID="1va-qZ-Lue">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Sqy-kH-Dlm" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Sqy-kH-Dlm" customClass="SecundarioViewController" customModule="Pioneras" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hOd-dN-wrg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ET6-Xe-u71">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ET6-Xe-u71">
                                 <rect key="frame" x="20" y="88" width="374" height="774"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -77,85 +77,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="NqC-ye-bCs"/>
                     </view>
+                    <connections>
+                        <outlet property="biografiaText" destination="ET6-Xe-u71" id="bEZ-8f-tY5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w00-sh-uup" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="tQD-GA-6xH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="894.20289855072474" y="137.94642857142856"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="3BT-mT-W5Q">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Tbc-xE-woy" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2bf-Jx-yRq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wc5-ZH-5ZO">
-                                <rect key="frame" x="20" y="76" width="374" height="786"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">Fue la primera programadora que utilizó el Mark I y entre las décadas de los 50 y 60, desarrolló el primer compilador para un lenguaje de programación así como también propició métodos de validación.
-
-En 1952, desarrolló el primer compilador de la historia, el A-0, y en 1957 realizó el primer compilador para procesamiento de datos que usaba órdenes en inglés, el B-0 (FLOW-MATIC), utilizado principalmente para el cálculo de nóminas.
-
-Tras su experiencia con FLOW-MATIC, Hopper pensó que podía crearse un lenguaje de programación que usara órdenes en inglés y que sirviera para aplicaciones de negocios. Con esta idea, las bases para COBOL habían sido establecidas, y 2 años después se creó el comité que diseño este lenguaje</mutableString>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMJ-iJ-aVW">
-                                <rect key="frame" x="20" y="44" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Atrás"/>
-                                <connections>
-                                    <segue destination="6qm-cD-o1b" kind="unwind" unwindAction="retornoDeSecundariaWithSegue:" id="uyQ-0y-82i"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="4wG-Ez-mtZ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sIZ-Pj-D9o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="6qm-cD-o1b" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="892.75362318840587" y="843.75"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Fby-gA-Jnc">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="6VD-69-t3U" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8u2-mc-DCS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="T9x-gd-CZ8">
-                                <rect key="frame" x="20" y="82" width="374" height="780"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Ha dirigido varios proyectos significativos, como el diseño e implementación del lenguaje de programación CLU, el primer lenguaje de programación que soportaba la abstracción de datos, Argus, que fue el primer lenguaje de alto nivel en soportar la implementación de programas distribuidos y Thor, un sistema de base de datos orientado a objetos. Junto con Jeannette Wing, desarrolló una particular definición de subtipo, comúnmente conocido como el Principio de sustitución de Liskov.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ko-1n-XUQ">
-                                <rect key="frame" x="20" y="44" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Atrás"/>
-                                <connections>
-                                    <segue destination="RIX-i3-9uy" kind="unwind" unwindAction="retornoDeSecundariaWithSegue:" id="jTd-LL-75f"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="ZdN-LH-QTi"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cGt-BK-O9L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="RIX-i3-9uy" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="892.75362318840587" y="1553.5714285714284"/>
         </scene>
     </scenes>
     <resources>
@@ -163,4 +92,7 @@ Tras su experiencia con FLOW-MATIC, Hopper pensó que podía crearse un lenguaje
         <image name="liskov" width="404" height="303"/>
         <image name="lovelace" width="640" height="430"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="CN4-X2-0ke"/>
+    </inferredMetricsTieBreakers>
 </document>

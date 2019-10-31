@@ -14,6 +14,10 @@
 		C7D3A319236B3CE5003763DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D3A318236B3CE5003763DD /* Assets.xcassets */; };
 		C7D3A31C236B3CE5003763DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D3A31A236B3CE5003763DD /* LaunchScreen.storyboard */; };
 		C7D3A327236B3CE5003763DD /* PionerasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3A326236B3CE5003763DD /* PionerasTests.swift */; };
+		C7D3A332236B472E003763DD /* SecundarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3A331236B472E003763DD /* SecundarioViewController.swift */; };
+		C7D3A338236B48A6003763DD /* hopper.txt in Resources */ = {isa = PBXBuildFile; fileRef = C7D3A335236B48A6003763DD /* hopper.txt */; };
+		C7D3A339236B48A6003763DD /* lovelace.txt in Resources */ = {isa = PBXBuildFile; fileRef = C7D3A336236B48A6003763DD /* lovelace.txt */; };
+		C7D3A33A236B48A6003763DD /* liskov.txt in Resources */ = {isa = PBXBuildFile; fileRef = C7D3A337236B48A6003763DD /* liskov.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		C7D3A322236B3CE5003763DD /* PionerasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PionerasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D3A326236B3CE5003763DD /* PionerasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PionerasTests.swift; sourceTree = "<group>"; };
 		C7D3A328236B3CE5003763DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7D3A331236B472E003763DD /* SecundarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecundarioViewController.swift; sourceTree = "<group>"; };
+		C7D3A335236B48A6003763DD /* hopper.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hopper.txt; path = ../../../Downloads/recursos/textos/hopper.txt; sourceTree = "<group>"; };
+		C7D3A336236B48A6003763DD /* lovelace.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = lovelace.txt; path = ../../../Downloads/recursos/textos/lovelace.txt; sourceTree = "<group>"; };
+		C7D3A337236B48A6003763DD /* liskov.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = liskov.txt; path = ../../../Downloads/recursos/textos/liskov.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,9 @@
 		C7D3A303236B3CE4003763DD = {
 			isa = PBXGroup;
 			children = (
+				C7D3A335236B48A6003763DD /* hopper.txt */,
+				C7D3A337236B48A6003763DD /* liskov.txt */,
+				C7D3A336236B48A6003763DD /* lovelace.txt */,
 				C7D3A30E236B3CE4003763DD /* Pioneras */,
 				C7D3A325236B3CE5003763DD /* PionerasTests */,
 				C7D3A30D236B3CE4003763DD /* Products */,
@@ -86,6 +97,7 @@
 				C7D3A318236B3CE5003763DD /* Assets.xcassets */,
 				C7D3A31A236B3CE5003763DD /* LaunchScreen.storyboard */,
 				C7D3A31D236B3CE5003763DD /* Info.plist */,
+				C7D3A331236B472E003763DD /* SecundarioViewController.swift */,
 			);
 			path = Pioneras;
 			sourceTree = "<group>";
@@ -182,6 +194,9 @@
 			files = (
 				C7D3A31C236B3CE5003763DD /* LaunchScreen.storyboard in Resources */,
 				C7D3A319236B3CE5003763DD /* Assets.xcassets in Resources */,
+				C7D3A339236B48A6003763DD /* lovelace.txt in Resources */,
+				C7D3A338236B48A6003763DD /* hopper.txt in Resources */,
+				C7D3A33A236B48A6003763DD /* liskov.txt in Resources */,
 				C7D3A317236B3CE5003763DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7D3A314236B3CE4003763DD /* ViewController.swift in Sources */,
+				C7D3A332236B472E003763DD /* SecundarioViewController.swift in Sources */,
 				C7D3A310236B3CE4003763DD /* AppDelegate.swift in Sources */,
 				C7D3A312236B3CE4003763DD /* SceneDelegate.swift in Sources */,
 			);
