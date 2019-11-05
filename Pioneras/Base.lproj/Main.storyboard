@@ -15,32 +15,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2p1-qB-dMB">
-                                <rect key="frame" x="0.0" y="310" width="414" height="275"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                <state key="normal" backgroundImage="hopper"/>
-                                <connections>
-                                    <segue destination="Sqy-kH-Dlm" kind="presentation" identifier="hopper" id="TuJ-4i-Zmw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSY-BE-Yf8">
-                                <rect key="frame" x="0.0" y="583" width="414" height="313"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="liskov"/>
-                                <connections>
-                                    <segue destination="Sqy-kH-Dlm" kind="presentation" identifier="liskov" id="CN4-X2-0ke"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rK4-oj-4z1">
-                                <rect key="frame" x="0.0" y="32" width="414" height="278"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <state key="normal" backgroundImage="lovelace"/>
-                                <connections>
-                                    <segue destination="Sqy-kH-Dlm" kind="presentation" identifier="lovelace" id="kJr-64-zRg"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z1E-IR-RrQ">
+                                <rect key="frame" x="10" y="32" width="394" height="854"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rK4-oj-4z1">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="278"/>
+                                        <state key="normal" backgroundImage="lovelace"/>
+                                        <connections>
+                                            <segue destination="Sqy-kH-Dlm" kind="presentation" identifier="lovelace" id="kJr-64-zRg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2p1-qB-dMB">
+                                        <rect key="frame" x="0.0" y="288" width="394" height="278"/>
+                                        <state key="normal" backgroundImage="hopper"/>
+                                        <connections>
+                                            <segue destination="Sqy-kH-Dlm" kind="presentation" identifier="hopper" id="TuJ-4i-Zmw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSY-BE-Yf8">
+                                        <rect key="frame" x="0.0" y="576" width="394" height="278"/>
+                                        <state key="normal" backgroundImage="liskov"/>
+                                        <connections>
+                                            <segue destination="Sqy-kH-Dlm" kind="presentation" identifier="liskov" id="CN4-X2-0ke"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="z1E-IR-RrQ" secondAttribute="bottom" constant="10" id="4yz-ZM-cWf"/>
+                            <constraint firstItem="z1E-IR-RrQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="5Cv-6Y-gT4"/>
+                            <constraint firstItem="z1E-IR-RrQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="32" id="QPG-4G-Kb7"/>
+                            <constraint firstAttribute="trailing" secondItem="z1E-IR-RrQ" secondAttribute="trailing" constant="10" id="VRg-4a-sm3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="z1E-IR-RrQ" secondAttribute="top" constant="12" id="rkM-93-ZoP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -56,18 +65,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ET6-Xe-u71">
-                                <rect key="frame" x="20" y="88" width="374" height="774"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ET6-Xe-u71">
+                                <rect key="frame" x="20" y="328" width="374" height="250"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="CEL-2V-Rzf"/>
+                                </constraints>
                                 <mutableString key="text">Sugirió el uso de tarjetas perforadas como método de entrada de información e instrucciones a la máquina analítica. Además introdujo una notación para escribir programas, principalmente basada en el dominio que Ada tenía sobre el texto de Luigi Menabrea de 1842 (que comentó personalmente completándolo con anotaciones que son más extensas que el texto mismo) sobre el funcionamiento del telar de Jacquard así como de la máquina analítica de Babbage. Es reseñable además su mención sobre la existencia de ceros o estado neutro en las tarjetas perforadas siendo que las tarjetas representaban para la máquina de Babbage números decimales y no binarios (8 perforaciones equivaldrían entonces a 8 unidades).</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDL-Uz-5gK">
-                                <rect key="frame" x="20" y="50" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDL-Uz-5gK">
+                                <rect key="frame" x="189" y="732" width="36" height="30"/>
                                 <state key="normal" title="Atrás"/>
                                 <connections>
                                     <segue destination="tQD-GA-6xH" kind="unwind" unwindAction="retornoDeSecundariaWithSegue:" id="URB-i7-MXV"/>
@@ -75,6 +85,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DDL-Uz-5gK" firstAttribute="centerX" secondItem="hOd-dN-wrg" secondAttribute="centerX" id="35G-XK-8VZ"/>
+                            <constraint firstItem="NqC-ye-bCs" firstAttribute="bottom" secondItem="DDL-Uz-5gK" secondAttribute="bottom" constant="100" id="6PB-7d-2pO"/>
+                            <constraint firstItem="ET6-Xe-u71" firstAttribute="centerY" secondItem="NqC-ye-bCs" secondAttribute="centerY" id="Klp-Ru-B5c"/>
+                            <constraint firstItem="ET6-Xe-u71" firstAttribute="centerX" secondItem="NqC-ye-bCs" secondAttribute="centerX" id="hD8-EK-SU0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NqC-ye-bCs"/>
                     </view>
                     <connections>
@@ -93,6 +109,6 @@
         <image name="lovelace" width="640" height="430"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CN4-X2-0ke"/>
+        <segue reference="TuJ-4i-Zmw"/>
     </inferredMetricsTieBreakers>
 </document>
